@@ -50,3 +50,15 @@ variable "private_subnets" {
 # The public subnets, minimum of 2, that are a part of the VPC(s)
 variable "public_subnets" {
 }
+
+# Domain Related
+
+variable "subdomain" {}
+
+locals {
+  subdomain = var.subdomain
+}
+
+variable "https_port" {
+  default = "443"
+}
